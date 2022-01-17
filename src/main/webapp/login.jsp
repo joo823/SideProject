@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>로그인화면</title>
+<title>메인 화면</title>
 </head>
 <body>
 
