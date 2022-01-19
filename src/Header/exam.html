@@ -1,0 +1,145 @@
+<!DOCTYPE html5>
+<html>
+<head>
+<title>
+</title>
+
+  </head>
+  <body>
+    <!-- header -->
+<nav id = "header_nav" class="navbar navbar-default" role="navigation">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+		      <span class="sr-only">Toggle navigation</span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+	     </button>
+	        <a class="navbar-brand" id = "brand" href="/index">
+						<img src = "handsfriend_small_logo.png" width = "23px" height = "23px" style = "float:left;">
+						<span style = "float:left;">&nbsp;&nbsp;Handsfriend</span>
+					</a>
+	   </div>
+	   <div class="navbar-collapse collapse" id="navbar-collapse-1">
+	     <ul id = "menu-list" class="nav navbar-nav navbar-left">
+        <li id="menu1"><a href="/start"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> 시작하기</a></li>
+		    <li id="menu2"><a href="/registration"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> 등록하기</a></li>
+        <li id="menu3"><a href="/management"><i class="fa fa-address-book-o" aria-hidden="true"></i> 관리하기</a></li>
+        <li id="menu4"><a href="/community"><i class="fa fa-users" aria-hidden="true"></i> 커뮤니티</a></li>
+	     </ul>
+			 <ul id = "menu-list" class="nav navbar-nav navbar-right">
+				<li class="line"></li>
+				<li style = "height:8px;"><li>
+				<li id="menu5"><a href="/faq">FAQ</a></li>
+				<li id="menu6"><a href="/privacy-statement">개인 정보 처리 방침</a></li>
+	     </ul>
+	   </div><!-- /.navbar-collapse -->
+	 </div><!-- /.container-fluid -->
+</nav>
+<div id = "header_div">
+</div>
+<script>
+  var current_menu = "menu"+0;
+	
+
+	//쿠키 차단시 서비스 이용 불가
+	if(!navigator.cookieEnabled) {
+		alert('현재 접속 브라우저의 쿠키가 차단되어 있습니다. 쿠키 허용 시 서비스를 이용할 수 있습니다.');
+		location.href = '/index';
+	}
+</script>
+
+    <div id = "head_wrap">
+      <div id = "logo_wrap" >
+        <img src = "handsfriend_logo_main.png" class = "img-responsive" alt = "랜덤 채팅">
+      </div>
+      <div id = "introduce_wrap">
+        핸즈프렌드는 순수한 목적을 잃어버린 기존 채팅사이트에서 탈피하여,<br>
+        누구나 즐길 수 있는 깨끗한 채팅사이트가 되기 위해 노력합니다.<br>
+      </div>
+      <a id = "index_about" href = "about-handsfriend"><i class="fa fa-share" aria-hidden="true"></i> About Handsfriend</a>
+      <span id = "design_version">Design Version 1.0</span>
+    </div> <!-- head_wrap -->
+
+    <div id = "main_wrap">
+      <div id = "start_wrap">
+        <div id = "start_icon_wrap" onclick="movePage('/start');">
+          <i class="fa fa-paper-plane-o fa-3x" aria-hidden="true"></i>
+          <div class = "small_margin"></div>
+          <span>시작하기</span>
+        </div>
+        <div id = "start_text_wrap">
+          시작하기 버튼을 클릭하면 지금 즉시 랜덤채팅을 시작할 수 있습니다.
+          완벽한 프라이버시가 존중되는 공간에서 낯선 상대와 1:1 대화를 나눠보세요.
+        </div>
+      </div>
+      <div id = "reg_wrap">
+        <div id = "reg_icon_wrap" onclick="movePage('/registration');">
+          <i class="fa fa-pencil-square-o fa-3x" aria-hidden="true"></i>
+          <div class = "small_margin"></div>
+          <span>등록하기</span>
+        </div>
+        <div id = "reg_text_wrap">
+          내 접속 정보를 핸즈프렌드에 등록하여
+          제공되는 여러 서비스를 무료로 이용할 수 있습니다.
+          등록한 정보로 접속시 핸즈프렌드에서 자동으로 고객님을 인식합니다.
+        </div>
+      </div>
+      <div id = "manage_wrap">
+        <div id = "manage_icon_wrap" onclick="movePage('/management');">
+          <i class="fa fa-address-book-o fa-3x" aria-hidden="true"></i>
+          <div class = "small_margin"></div>
+          <span>관리하기</span>
+        </div>
+        <div id = "manage_text_wrap">
+          핸즈프렌드에 등록한 고객님의 정보를 관리하거나 등록을 해지할 수 있습니다.
+          채팅 기록을 이용해서 상대에게 메시지를 보낼 수 있습니다.
+        </div>
+      </div>
+      <div id = "comu_wrap">
+        <div id = "comu_icon_wrap" onclick="movePage('/community');">
+          <i class="fa fa-users fa-3x" aria-hidden="true"></i>
+          <div class = "small_margin"></div>
+          <span>커뮤니티</span>
+        </div>
+        <div id = "comu_text_wrap">
+          회원 인증 절차 없이 커뮤니티를 이용할 수 있습니다.
+          익명으로 게시물에 댓글을 달고 사람들과 소통, 공감할 수 있습니다.
+        </div>
+      </div>
+    </div> <!-- main_wrap -->
+    <div id = "foot_wrap">
+  <div class = "small_margin"></div>
+  <a href = "privacy-statement">개인 정보 처리 방침</a>
+  &nbsp; | &nbsp;
+  Email : rnjsrldnd123@naver.com<br>
+  대표자 : 권기웅(Mosball)
+  &nbsp; | &nbsp;
+  <a href = "about-handsfriend">About Handsfriend.</a><br>
+  Copyright 2018 - 2019. handsfriend. All rights reserved.
+  <br>
+  <div class = "small_margin"></div>
+</div> <!-- foot_wrap -->
+
+  <script type = "text/javascript" src = "jquery-3.4.1.min.js"></script>
+  <script type = "text/javascript" src = "bootstrap.min.js"></script>
+  <script type = "text/javascript" src = "index.js"></script>
+  <script>
+    $('#header_nav').css('position', 'static');
+    $('#start_text_wrap').css('margin-top', $('#start_icon_wrap').outerHeight() / 2);
+    $('#reg_text_wrap').css('margin-top', $('#reg_icon_wrap').outerHeight() / 2);
+    $('#manage_text_wrap').css('margin-top', $('#manage_icon_wrap').outerHeight() / 2);
+    $('#comu_text_wrap').css('margin-top', $('#comu_icon_wrap').outerHeight() / 2);
+    $('#start_text_wrap').css('padding-top', $('#start_icon_wrap').outerHeight() / 2 + 20);
+    $('#reg_text_wrap').css('padding-top', $('#reg_icon_wrap').outerHeight() / 2 + 20);
+    $('#manage_text_wrap').css('padding-top', $('#manage_icon_wrap').outerHeight() / 2 + 20);
+    $('#comu_text_wrap').css('padding-top', $('#comu_icon_wrap').outerHeight() / 2 + 20);
+
+    $(window.document).on("keydown", function(event) {
+      return event.keyCode !== 123;
+    });
+  </script>
+  </body>
+</html>
